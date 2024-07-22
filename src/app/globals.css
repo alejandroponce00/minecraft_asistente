@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.imagen{object-fit: cover;
+    z-index: -2;}
