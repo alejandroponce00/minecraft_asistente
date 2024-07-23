@@ -12,8 +12,8 @@ export default function Chat() {
   return (
     <div className='text-center rounded-lg p-4 mx-2.5 '>
      <Fondo />
-      <h1 className='text-5xl text-center my-3 text-slate-800 font-bold mb-10'>Ariel GPT</h1>
-      <h6 className=' text-2xl text-center my-3 text-slate-600 mb-10'>Tu asistente con mala onda</h6>
+      <h1 className='text-5xl text-center my-3 text-slate-800 font-bold mb-10'>Asistente de Minecraft</h1>
+      <h6 className=' text-2xl text-center my-3 text-slate-600 mb-10'>Preguntame algo sobre minecraft</h6>
     
       <div className='mb-4 max-h-96 h-full overflow-y-scroll '>
       

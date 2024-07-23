@@ -4,7 +4,7 @@ export default function Fondo() {
   return (
     <Image
           alt="fondo"
-          src={"/imagenes/cocinando.webp"}
+          src={"/imagenes/fondo_mine.jpg"}
           className="imagen blur-sm"
           // width={"560"}
           //height={"200"}
