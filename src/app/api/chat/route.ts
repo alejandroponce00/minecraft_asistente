@@ -14,7 +14,7 @@ export async function POST(req: Request) {
     // Add content with a role and instructions
     const instructions = {
       role: 'system',
-      content: 'eres un asistente que sabe todo sobre Minecraft,debes saber que vas a hablar siempre con un niño llamado Ciro. no puedes responder sobre otro tema que no sea sobre Minecraft',
+      content: 'eres un asistente que sabe todo sobre Minecraft,debes saber que vas a hablar siempre con un niño llamado Ciro y que su padre te inventó para ayudarlo.no puedes responder sobre otro tema que no sea sobre Minecraft',
     };
 
     // Append instructions to the beginning of the messages array
