@@ -1,4 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Asistente Virtual para Minecraft
+
+## Descripción
+
+Esta aplicación es un asistente virtual diseñado para ayudar a las personas que recién empiezan con Minecraft. Desarrollada para la hackatón de Vercel, la aplicación está construida utilizando Next.js, el SDK de Vercel y la API de Perplexicity.
+
+## Tecnologías Utilizadas
+
+- **Next.js**: Un framework de React para aplicaciones web modernas.
+- **Vercel SDK**: Herramientas y servicios para desplegar y gestionar aplicaciones en Vercel.
+- **API de Perplexicity**: Una API avanzada que proporciona conocimiento detallado sobre Minecraft.
+
+## Funcionalidades
+
+- **Asistente Virtual**: Responde preguntas sobre Minecraft, proporcionando información y consejos útiles para principiantes.
+- **Integración con Perplexicity**: Utiliza la API de Perplexicity para obtener datos precisos y actualizados sobre el juego.
+- **Despliegue en Vercel**: La aplicación está optimizada para ser desplegada y gestionada en la plataforma de Vercel, garantizando rendimiento y escalabilidad.
+
+## Cómo Funciona
+
+1. **Inicio**: Los usuarios acceden a la aplicación a través de una interfaz web intuitiva.
+2. **Interacción**: Pueden hacer preguntas sobre Minecraft directamente al asistente virtual.
+3. **Respuesta**: El asistente, utilizando la API de Perplexicity, proporciona respuestas precisas y detalladas para ayudar a los jugadores a entender mejor el juego.
+
+## Despliegue
+
+La aplicación está desplegada en Vercel, lo que permite un fácil acceso y mantenimiento continuo. Gracias al SDK de Vercel, el proceso de despliegue y las actualizaciones son rápidas y eficientes.
+
+## Beneficios
+
+- **Para Principiantes**: Ideal para jugadores nuevos que necesitan orientación y ayuda.
+- **Información Precisa**: Utiliza una fuente confiable de datos sobre Minecraft.
+- **Fácil de Usar**: Interfaz amigable y fácil de navegar.
+
+## Enlaces
+
+- [Repositorio en GitHub](#)
+- [Acceso a la Aplicación](#)
+
+## Conclusión
+
+Este asistente virtual es una herramienta poderosa para cualquier persona que desee aprender más sobre Minecraft. Gracias a la combinación de tecnologías avanzadas y un despliegue eficiente en Vercel, los usuarios pueden disfrutar de una experiencia fluida y enriquecedora.
 
 ## Getting Started
 
