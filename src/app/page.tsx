@@ -3,17 +3,20 @@
 import { useChat } from 'ai/react';
 import Image from "next/image";
 import Fondo from './components/fondo/fondo';
+import { FlipWords } from "../app/components/ui/flip-words";
 
 
 
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit,isLoading } = useChat();
+  const words = ["Asistente", "Experto", "Sabelotodo"];
 
   return (
     <div className='text-center rounded-lg p-4 mx-2.5 '>
      <Fondo />
-      <h1 className='text-5xl text-center my-3 text-slate-800 font-bold mb-10'>Asistente de Minecraft</h1>
-      <h6 className=' text-2xl text-center my-3 text-slate-600 mb-10'>Preguntame algo sobre minecraft</h6>
+      <h1 className='text-5xl text-center my-3 text-green-500 font-bold mb-10'><FlipWords words={words} /> <br /> de Minecraft</h1>
+      
+      <h6 className=' text-2xl text-center my-3 text-slate-600 mb-10'>Hola Ciro,preguntame algo sobre minecraft</h6>
     
       <div className='mb-4 max-h-96 h-full overflow-y-scroll '>
       
