@@ -34,8 +34,8 @@ La aplicación está desplegada en Vercel, lo que permite un fácil acceso y man
 
 ## Enlaces
 
-- [Repositorio en GitHub][https://github.com/alejandroponce00/minecraft_asistente]
-- [Acceso a la Aplicación](#)
+- [Repositorio en GitHub](https://github.com/alejandroponce00/minecraft_asistente)
+- [Acceso a la Aplicación](https://minecraft-asistente.vercel.app/)
 
 ## Conclusión
 
