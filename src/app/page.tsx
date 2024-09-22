@@ -4,6 +4,7 @@ import { useChat } from 'ai/react';
 import { useEffect, useRef } from 'react';
 import Fondo from './components/fondo/fondo';
 import { FlipWords } from "../app/components/ui/flip-words";
+import TorchComponent from './components/antorcha/antorcha';
 
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
@@ -16,13 +17,16 @@ export default function Chat() {
     messageContainerRef.current?.scrollTo(0, messageContainerRef.current.scrollHeight);
   }, [messages]);
 
-  return (
+  return (<div className='flex-col'>
     <div className='text-center rounded-lg p-4 mx-2.5 '>
+      
       <Fondo />
       <h1 className='text-5xl text-center my-3 text-green-500 font-bold mb-10'>
         <FlipWords words={words} /> <br /> de Minecraft
       </h1>
+      <section className='flex flex-nowrap'><TorchComponent /><TorchComponent /></section>
       
+     
       <h6 className='text-2xl text-center my-3 text-slate-600 mb-10'>
         Hola Ciro, pregúntame algo sobre Minecraft
       </h6>
@@ -53,7 +57,8 @@ export default function Chat() {
           enviar
         </button>
       </form>
+      
       <footer className='mt-20'>creado por Alejandro Ponce</footer>
-    </div>
+    </div></div>
   );
 }
