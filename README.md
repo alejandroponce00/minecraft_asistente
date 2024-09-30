@@ -1,4 +1,5 @@
 # Asistente Virtual para Minecraft
+![Link an image.](/public/minecraft.png)
 
 ## Descripción
 
