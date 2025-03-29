@@ -26,7 +26,7 @@ export async function POST(req: Request) {
       model: 'sonar',
       stream: true,
       messages: enhancedMessages,
-      max_tokens: 300,
+      max_tokens: 100,
      
     });
 
