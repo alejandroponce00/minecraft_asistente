@@ -8,6 +8,15 @@ const perplexity = new OpenAI({
 
 export async function POST(req: Request) {
   try {
+    // Validate API key
+    if (!process.env.PERPLEXITY_API_KEY) {
+      console.error('PERPLEXITY_API_KEY is not configured');
+      return new Response(JSON.stringify({ error: 'API key not configured' }), { 
+        status: 500,
+        headers: { 'Content-Type': 'application/json' }
+      });
+    }
+
     // Extract the `messages` from the body of the request
     const { messages } = await req.json();
 
@@ -36,7 +45,16 @@ export async function POST(req: Request) {
     // Create a new Response object with the stream
     return new StreamingTextResponse(stream);
   } catch (error) {
-    // Handle errors by returning a response with a suitable status code and message
-    return new Response(JSON.stringify({ error: 'Internal Server Error' }), { status: 500 });
+    console.error('Error in chat API:', error);
+    
+    // Return detailed error in development, generic in production
+    const errorMessage = process.env.NODE_ENV === 'development' 
+      ? { error: 'Internal Server Error', details: error instanceof Error ? error.message : String(error) }
+      : { error: 'Internal Server Error' };
+    
+    return new Response(JSON.stringify(errorMessage), { 
+      status: 500,
+      headers: { 'Content-Type': 'application/json' }
+    });
   }
 }
