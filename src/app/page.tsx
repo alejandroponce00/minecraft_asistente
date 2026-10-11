@@ -27,7 +27,7 @@ export default function Chat() {
       <section className='flex flex-nowrap'><TorchComponent /><TorchComponent /></section>
       
      
-      <h6 className='text-2xl text-center my-3 text-slate-600 mb-10'>
+      <h6 className='text-2xl text-center my-3 text-slate-600 mb-10'>//hola
         Hola Ciro, pregúntame algo sobre Minecraft
       </h6>
     
